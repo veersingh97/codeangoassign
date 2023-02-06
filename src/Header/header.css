@@ -1,0 +1,82 @@
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  font-weight: 600;
+  background-image: url("../banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgb(255, 255, 255);
+  background-position: center;
+}
+
+.logo {
+  height: 3rem;
+}
+.navbar-text {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+.navbar-label {
+  text-decoration: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.navbar-label:hover {
+  color: #04D2C8;
+}
+
+.bars {
+  display: none;
+}
+@media (max-width: 38em) {
+  body {
+    overflow-x: hidden;
+  }
+  html {
+    font-size: 47%;
+  }
+  .header-section {
+    padding: 1rem;
+    background-color: rgb(232, 232, 232);
+  }
+  .bars {
+    display: inline-block;
+  }
+  .navbar-text {
+    visibility: hidden;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 8%;
+    left: 0;
+    background-color: rgb(232, 232, 232);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateX(100%);
+    overflow: hidden;
+    color: black;
+    transition: all 0.3s linear;
+  }
+  .navbar-text.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0%);
+    transform-origin: right;
+    transition: all 0.3s linear;
+    z-index: 999;
+    color: rgb(255, 255, 255);
+  }
+  .bars-mobile {
+    width: 3rem;
+    height: 3rem;
+  }
+}

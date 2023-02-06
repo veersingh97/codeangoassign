@@ -1,0 +1,34 @@
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5rem;
+  }
+  
+  .footer-section {
+    padding: 3rem 3rem;
+    background-image: url("../banner.png");
+    color: white;
+  }
+  .footer-logo {
+    width: 100%;
+  }
+  .brand-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.4rem;
+    margin: 1rem 0rem 4.7rem 0rem;
+  }
+  .brand-logo p {
+    margin-right: 1rem;
+  }
+  .footer-head {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  .footer-content p {
+    margin-bottom: 1rem;
+    color: rgb(255, 255, 255);
+  }
+  

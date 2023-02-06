@@ -1,0 +1,77 @@
+.about-area {
+  padding: 5rem 0 5rem 0;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: 100%;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+.single-about h3{
+    font-size: 4rem;
+    line-height: 56px;
+    font-weight: 400;
+    line-height: 1.1;
+}
+.single-about p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #727272;
+    margin-top: .8rem;
+    margin-bottom: 2rem;
+}
+.course{
+    margin: 1rem 2rem;
+}
+.course-content {
+    position: relative;
+    
+}
+
+.orange {
+  background: #fd8e5e;
+  top: 20px;
+  left: 30px;
+  position: absolute;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.blue {
+  background-color: #5db2ff;
+  top: -30px;
+  left: 200px;
+  position: absolute;
+  width: 17rem;
+  height: 17rem;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.green {
+  background-color: #04d2c8;
+  top: 150px;
+  left: 190px;
+  position: absolute;
+  width: 13rem;
+  height: 13rem;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+span{
+    font-size: 2rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.orange h2, .blue h2, .green h2{
+    color: white;
+    text-align: center;
+    margin-top: 4rem;
+}
